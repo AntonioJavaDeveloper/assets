@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: board
+      MYSQL_USER: username
+      MYSQL_PASSWORD: username-password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/mysql/storage:/var/lib/mysql
+    restart: always

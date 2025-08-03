@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/migrations/db-create-boards-table.changelog-202508031108.sql
+  - include:
+      file: db/changelog/migrations/db-create-boards_columns-table.changelog-202508031144.sql
+  - include:
+      file: db/changelog/migrations/db-create-cards-table.changelog-202508031200.sql
+  - include:
+      file: db/changelog/migrations/db-create-blocks-table.changelog-202508031207.sql
